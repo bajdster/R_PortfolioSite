@@ -44,16 +44,15 @@ const Skill = (props)=>
     <div className={classes.skillsBox}>
         {props.skills.map((skill, index) => 
         {
-            console.log("CHOLERNA LISTA" + startLearn)
 
-            let years = startLearn ? startLearn[index].years : "Dupa"
-            let months = startLearn ? startLearn[index].months : "Dupa nie miesiac"
+            let years = startLearn ? startLearn[index].years : ""
+            let months = startLearn ? startLearn[index].months : ""
 
             const yearsEnding = years > 1 ? "years" : "year"
             const monthsEnding = months > 1 ? "months" : "month"
     
 
-           return (<div className={classes.skill} data-aos="fade-right" key={index}>
+           return (<div className={classes.skill} data-aos="flip-down" key={index}>
                 <h3>{skill.lang}</h3>
                 <div className={classes.image}><img src={skill.image} alt = {props.lang}></img></div>
                 <h4>{skill.since && (years > 0 ? years + " " +  yearsEnding : " ") + " "+ months + " " + monthsEnding}</h4>
@@ -67,7 +66,7 @@ const Skill = (props)=>
     {props.tech.map(techItem =>
         {
             return (
-            <div className={classes.skill} data-aos="fade-left" key={techItem.lang}>
+            <div className={classes.skill} data-aos="flip-down" key={techItem.lang}>
             <h3>{techItem.lang}</h3>
                 <div className={classes.image}><img src={techItem.image} alt = {props.lang}></img></div>
             </div>)

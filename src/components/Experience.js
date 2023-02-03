@@ -10,10 +10,10 @@ import istqb from "../images/istqb.png"
 const Experience = () => {
   return (
     <div className={classes.experienceList}>
-    <h2 data-aos="fade-right">Work Experience</h2>
+    <h2 data-aos="flip-down">Work Experience</h2>
         <ul>
             <li>
-                <div className={classes.expItem} data-aos="fade-right">
+                <div className={classes.expItem} data-aos="flip-down">
                     <div className={classes.logoImage}>
                         <img src={wp} alt ="logo wojsko polskie"></img>
                     </div>
@@ -28,7 +28,7 @@ const Experience = () => {
                 </div>
             </li>
             <li>
-                <div className={classes.expItem} data-aos="fade-right">
+                <div className={classes.expItem} data-aos="flip-down">
                     <div className={classes.logoImage}>
                         <img src={sii} alt = "logo sii"></img>  
                     </div>
@@ -49,7 +49,7 @@ const Experience = () => {
         <h2>Education</h2>
             <ul>
                 <li>
-                    <div className={classes.expItem} data-aos="fade-right">
+                    <div className={classes.expItem} data-aos="flip-down">
                         <div className={classes.logoImage}>
                             <img src={spsp} alt ="logo spsp"></img>
                         </div>
@@ -61,7 +61,7 @@ const Experience = () => {
                     </div>
                 </li>
                 <li>
-                    <div className={classes.expItem} data-aos="fade-right">
+                    <div className={classes.expItem} data-aos="flip-down">
                         <div className={classes.logoImage}>
                             <img src={kul} alt = "logo kul"></img>
                         </div>
@@ -74,10 +74,10 @@ const Experience = () => {
                     </div>
                 </li>
             </ul>
-        <h2 data-aos="fade-right">Certificates and courses</h2>
+        <h2 data-aos="flip-down">Certificates and courses</h2>
             <ul>
                 <li>
-                    <div className={classes.expItem} data-aos="fade-right">
+                    <div className={classes.expItem} data-aos="flip-down">
                         <div className={classes.logoImage}>
                             <img src={istqb} alt ="logo istqb"></img>
                         </div>
@@ -89,7 +89,7 @@ const Experience = () => {
                     </div>
                 </li>
                 <li>
-                    <div className={classes.expItem} data-aos="fade-right">
+                    <div className={classes.expItem} data-aos="flip-down">
                         <div className={classes.logoImage}>
                             <img src={sii} alt = "logo sii"></img>
                         </div>

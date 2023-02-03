@@ -2,11 +2,20 @@ import { Link, NavLink } from "react-router-dom"
 import classes from "./Navigation.module.css"
 import menu from "../images/menu.png"
 import close from "../images/close.png"
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import AOS from "aos"
+import 'aos/dist/aos.css'
+
 
 const Navigation = () =>
 {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+    useEffect(()=>
+    {
+        AOS.init({duraton: 2000})
+    }, [])
+
 
     function showMobileMenu()
     {
@@ -30,7 +39,7 @@ const Navigation = () =>
             </ul>
         </nav>
 
-        {isMobileMenuOpen && <div className={classes.mobileMenu}>
+        {isMobileMenuOpen && <div className={classes.mobileMenu} data-aos="fade-down">
             <div className={classes.closeMenu}>
                 <img src={close} alt="close icon" onClick = {showMobileMenu}></img>
             </div>

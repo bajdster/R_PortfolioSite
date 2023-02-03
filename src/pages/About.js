@@ -103,7 +103,7 @@ const About = () =>
 
 
             <div className={classes.skills}>
-            <h2 data-aos="fade-right">Coding experience</h2>
+            <h2 data-aos="flip-down">Coding experience</h2>
                 <Skill skills = {skills} tech={tech} />
             </div>     
         </div>
