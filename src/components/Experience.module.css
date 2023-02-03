@@ -1,0 +1,68 @@
+
+.experienceList
+{
+    width:90%;
+}
+
+.experienceList ul
+{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.experienceList h2
+{
+    margin-top:30px;
+}
+
+.logoImage
+{
+    max-width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+li img
+{
+    width:100%;
+}
+
+h2
+{
+    color:blueviolet
+}
+
+.expItem
+{
+    display: flex;
+}
+
+.expItem p
+{
+    font-size: 16px;
+    color:rgb(121, 121, 121)
+}
+
+@media screen and (min-width:900px) 
+{
+    .experienceList ul
+    {
+        flex-direction: row;
+    }  
+
+    li
+    {
+        width:50%;
+    }
+
+
+    .logoImage
+    {
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+}

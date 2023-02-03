@@ -1,0 +1,109 @@
+
+
+.portfolioView
+{
+    font-family: 'Oswald', sans-serif;
+    height: 100vh; 
+    max-width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+video
+{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolioScreen
+{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.129);
+}
+
+.portfolioBox
+{
+    width:80%;
+    height: 85%;
+    background-color: rgba(255, 255, 255, 0.793);
+    border-radius: 5px;
+    margin-top:60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    overflow-y: scroll;
+    box-shadow: 0 0 10px black;
+    animation: showWindow 2s ease-in-out;
+}
+
+  *::-webkit-scrollbar {
+    display:none
+  }
+
+  
+
+
+/* .portfolioBox::before
+{
+    content: "dadsa";
+    color:black;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 40px solid rgba(152, 152, 152, 0.99);
+    border-left:20px solid transparent;
+    border-right: 20px solid transparent;
+    visibility: visible;
+    position: absolute;
+    top:-50px;
+    left: 0;
+    z-index: 1000;
+} */
+
+.portfolioBox .bar
+{
+    /* position: absolute; */
+    width:80%;
+    background-color: rgb(135, 133, 133);
+    z-index: 10;
+    text-align: center;
+    position: fixed;
+    color:aliceblue;
+    animation: showBar 2s ease-in-out;
+} 
+
+@keyframes showWindow {
+    0%
+    {
+        width:0;
+        height: 0;
+    }
+    100%
+    {
+        width:80%;
+        height: 85%;
+    }
+}
+
+@keyframes showBar {
+    0%
+    {
+        width:0%;
+    }
+    100%
+    {
+        width:80%;
+    }
+}

@@ -1,0 +1,48 @@
+.skillsBox
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:90%;
+    /* background-color: aquamarine; */
+    flex-wrap: wrap;
+}
+
+.skill
+{
+    margin:5px;
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(129, 4, 167); */
+    border-radius: 10px;
+}
+
+.skill h4
+{
+    font-size:15px;
+    color: #189595;
+}
+
+.image
+{
+    width:20%;
+}
+
+.image img
+{
+    width:100%;
+}
+
+@media screen and (min-width:900px) 
+{
+    .skillsBox
+    {
+        flex-wrap: nowrap;
+    } 
+    .skill
+    {
+        margin:10px;
+    }
+}

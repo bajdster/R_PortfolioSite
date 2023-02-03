@@ -1,0 +1,102 @@
+
+.contactCta h2
+{
+    color:#189595;
+    font-size:28px;
+}
+
+.contactBox
+{
+    position: relative;
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactItem
+{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.contactItem a
+{
+    font-weight: 400;
+}
+
+.contactDesc h3:hover
+{
+    color:#189595;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.contactItem img
+{
+    width:100%;
+}
+
+.image
+{
+    width:5%;
+}
+
+.contactDesc
+{
+    width:70%;
+    text-align: center;
+}
+
+.copyInfo
+{
+    position: absolute;
+    bottom:20px;
+    right: -10px;
+    background-color: rgba(0, 0, 0, 0.567);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+@media screen and (min-width:900px) {
+    .contactBox
+    {
+        width:90%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contactItem
+    {
+        width:25%;
+        justify-content: center;
+    }
+    .image
+    {
+        width:10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contactDesc
+    {
+        width:50%;
+        margin-left: 10px;
+    }
+    .copyInfo
+    {
+        right:50%;
+        transform: translateX(25%);
+    }
+}
+
+@media screen and (min-width:600px) {
+    .contactBox
+    {
+        width:40%;
+    }
+}
