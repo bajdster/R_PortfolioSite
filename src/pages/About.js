@@ -16,6 +16,8 @@ import postman from "../images/postman.png"
 import selenium from "../images/selenium.png"
 import react from "../images/react.png"
 import Contact from "../components/Contact"
+import sass from "../images/sass.png";
+import typescript from "../images/typescript.png"
 import AOS from "aos"
 import 'aos/dist/aos.css'
 import { useEffect } from "react"
@@ -44,6 +46,16 @@ const About = () =>
             lang: "React",
             since: "2022-10-23",
             image:react
+        },
+        {
+            lang: "Typescript",
+            since: "2023-03-10",
+            image:typescript
+        },
+        {
+            lang: "Sass",
+            since: "2023-02-22",
+            image:sass
         },
         {
             lang: "WordPress",

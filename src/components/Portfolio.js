@@ -13,6 +13,8 @@ import pomodoro from "../images/pomodoro.png"
 import word from "../images/word.png"
 import tictactoe from "../images/tictactoe.png"
 import todo from "../images/todo.png"
+import pizzatime from "../images/pizzatime.png"
+import flashcard from "../images/flashcard.png"
 
 
 const Portfolio = () =>
@@ -34,6 +36,8 @@ const Portfolio = () =>
 
                     <PortfolioSection title = "Apps">
                         <PortfolioList>
+                        <PortfolioListItem title = "Flashcards" image={flashcard} tags = {["HTML", "SCSS", "JavaScript", "React", "Redux", "Router", "Firebase"]} alt="pizza time site" src="https://flashcardmb.netlify.app/" />
+                        <PortfolioListItem title = "Pizza Time" image={pizzatime} tags = {["HTML", "CSS", "JavaScript", "React", "Redux", "Firebase"]} alt="pizza time site" src="https://appofpizzatime.netlify.app" />
                         <PortfolioListItem title = "Tic Tac Toe" image={tictactoe} tags = {["HTML", "CSS", "JavaScript", "React"]} alt="tictactoe game site" src="https://tictactoemb.netlify.app" />
                         <PortfolioListItem title = "To Do App" image={todo} tags = {["HTML", "CSS", "JavaScript", "React", "Context API"]} alt="todo app site" src="https://to-do-mb.netlify.app"/>
                         <PortfolioListItem title = "Arkanoid" image={arkanoid} tags = {["HTML", "CSS", "JavaScript"]} alt="arkanoid game site" src="https://arkanoidmb.netlify.app"/>

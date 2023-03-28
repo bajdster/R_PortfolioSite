@@ -29,8 +29,7 @@ const Skill = (props)=>
             {
                 return
             }
-            
-            //jak sie da startLearn to odświeża sie jak pojebane non stop...
+
         }
 
         getTime()
@@ -39,6 +38,7 @@ const Skill = (props)=>
     }, [props.skills])
 
 
+    
 
     return <>
     <div className={classes.skillsBox}>
@@ -55,7 +55,7 @@ const Skill = (props)=>
            return (<div className={classes.skill} data-aos="flip-down" key={index}>
                 <h3>{skill.lang}</h3>
                 <div className={classes.image}><img src={skill.image} alt = {props.lang}></img></div>
-                <h4>{skill.since && (years > 0 ? years + " " +  yearsEnding : " ") + " "+ months + " " + monthsEnding}</h4>
+                <h4>{skill.since && (years > 0 ? years + " " +  yearsEnding : " ") + " "+ (months > 0 ? months + " " + monthsEnding: "< 1 month")}</h4>
             </div>)
         })}
        
